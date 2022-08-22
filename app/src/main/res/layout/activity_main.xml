@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="409dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="AC"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:onClick="calc"
+                android:tag="cut"
+                app:cornerRadius="-10dp"
+                app:icon="@drawable/ic_baseline_backspace_24"
+                app:iconGravity="textStart" />
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="%"
+                android:text="%"
+                app:cornerRadius="-10dp" />
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="÷"
+
+                android:text="÷"
+                app:cornerRadius="-10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="7"
+                android:text="7"
+                app:cornerRadius="-10dp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="8"
+                android:text="8"
+                app:cornerRadius="-10dp" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="9"
+                android:text="9"
+                app:cornerRadius="-10dp" />
+
+            <Button
+                android:id="@+id/button_x"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="×"
+
+                android:text="×"
+                app:cornerRadius="-10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="-"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buttonplus"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="+"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="-20dp"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="."
+                android:text="." />
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="calc"
+                android:tag="0"
+                android:text="0" />
+
+
+            <Button
+                android:id="@+id/buttonequal"
+                style="@style/equalButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+
+                android:layout_weight="2"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="calc"
+                android:tag="equal"
+                android:text="=" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="415dp"
+        android:layout_height="846dp"
+        android:background="#FFFFFF"
+        android:fontFamily="monospace"
+        android:gravity="bottom|right"
+        android:paddingRight="40dp"
+        android:textColor="#000000"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

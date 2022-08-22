@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorSecondary">@color/orange500</item>
+        <item name="colorPrimaryDark">@color/blue800</item>
+<!--        <item name ="buttonStyle">@style/Widget.MaterialComponents.Button.OutlinedButton</item>-->
+    </style>
+    <style name="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="borderWidth">10dp</item>
+        <item name="android:colorEdgeEffect">@color/black</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+    <style name="equalButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/orange_new</item>
+        <item name="borderWidth">10dp</item>
+        <item name="android:colorEdgeEffect">@color/black</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+</resources>
